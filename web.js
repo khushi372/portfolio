@@ -14,16 +14,16 @@ exit.addEventListener('click',function(){
 // console.log(nav2);
 // console.log(contact);'
 
-let button = document.querySelector(".fa-arrow-up");
+let button = document.querySelector(".scroll-btn");
 
 console.log(button);
 
 window.addEventListener('scroll',function(){
   console.log(window.scrollY);
   if(this.window.scrollY > 200){
-      button.classList.remove("scroll-btn");
+      button.classList.remove("scroll-btn-visibility");
   }else{
-      button.classList.add("scroll-btn");
+      button.classList.add("scroll-btn-visibility");
   }
 });
 

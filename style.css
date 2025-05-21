@@ -7,28 +7,43 @@ html {
     scroll-behavior: smooth;
 }
 
-.fa-arrow-up {
+.scroll-btn {
     z-index: 10;
     position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: orangered;
     border-radius: 50%;
-    width: 27px;
-    height: 30px;
-    padding: 5px;
+    padding: 15px;
     box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-btn:hover {
+    cursor: pointer;
+}
+
+.scroll-btn-visibility {
+    display: none !important;
+}
+
+.fa-arrow-up {
+    /* width: 27px; */
+    /* height: 30px; */
     font-size: 15px;
-    text-align: center;
+    /* padding: 5px; */
+    /* text-align: center; */
     color: white;
 }
 
 .fa-arrow-up:hover {
     color: black;
-}
-
-.scroll-btn {
-    display: none !important;
 }
 
 /*----------------  Header section  ----------------*/
