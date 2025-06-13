@@ -18,8 +18,6 @@ html {
     box-sizing: border-box;
     width: 20px;
     height: 20px;
-
-    /* text-align: center; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,11 +32,7 @@ html {
 }
 
 .fa-arrow-up {
-    /* width: 27px; */
-    /* height: 30px; */
     font-size: 15px;
-    /* padding: 5px; */
-    /* text-align: center; */
     color: white;
 }
 
@@ -71,10 +65,6 @@ html {
     text-shadow: 0 0 25px orangered,
         0 0 50px orangered;
     transform: scale(1.1);
-}
-
-span {
-    color: orangered;
 }
 
 #about {
@@ -119,8 +109,9 @@ nav {
 }
 
 .nav2 nav {
-    flex-direction: column;
-    padding: 60px 0 0 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav2 a {
@@ -137,8 +128,8 @@ nav {
 .nav2 {
     position: fixed;
     display: none;
-    height: 100vh;
-    width: 50vh;
+    height: 20vh;
+    width: 100%;
     background-color: #333;
     top: 0px;
     right: 0px;
@@ -151,9 +142,8 @@ nav {
 #exit {
     font-size: 20px;
     color: red;
-    margin-top: 30px;
+    margin: 20px 0 5px 20px;
     cursor: pointer;
-    margin-left: 30px;
 }
 
 
@@ -178,11 +168,11 @@ nav {
     }
 }
 
-@media (min-width: 414px) {
+/* @media (min-width: 414px) {
     #exit {
         margin-left: 50px;
     }
-}
+} */
 
 /* #endregion */
 
@@ -190,11 +180,18 @@ nav {
 /*----------------  About section  ----------------*/
 
 .about_container {
-    margin-left: 100px;
+    /* margin-left: 100px; */
     margin-top: 100px;
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 90px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 100px 0;
+    gap: 30px;
+}
+
+.about_container div{
+    justify-content: center;
+    align-items: center;
 }
 
 .about_container p {
@@ -202,18 +199,8 @@ nav {
     text-align: center;
 }
 
-@media (max-width: 875px) {
-    .about_container {
-        gap: 50px;
-    }
-}
-
-@media (max-width: 776px) {
-    .about_container {
-        flex-direction: column;
-        gap: 40px;
-        align-items: center;
-    }
+span {
+    color: orangered;
 }
 
 .hi {
@@ -232,23 +219,42 @@ nav {
     border: 1px solid black;
 }
 
+@media (max-width: 879px) {
+    .about_container {
+        gap: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 776px) {
+    .about_container {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
 
 
 /*----------------  Project section  ----------------*/
 
 .projects_container {
-    background-color: rgb(197, 204, 211);
-    height: auto;
-    width: auto;
-    padding-bottom: 80px;
+    /* background-color: rgb(197, 204, 211); */
+    background-color: rgb(220, 220, 220);
+    padding: 20px 20px 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .projects_container a {
     color: orangered;
     text-decoration: none;
+    border-bottom: 2px solid white;
 }
 
-.projects_container a:hover{
+.projects_container a:hover {
     border-bottom: 2px solid orangered;
 }
 
@@ -257,33 +263,28 @@ nav {
 }
 
 .project_link {
-    box-sizing: border-box;
-    padding: 0px 20px;
-    background-color: rgb(197, 204, 211);
     gap: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(100px, 275px));
     place-items: center;
-}
-
-@media (max-width: 920px) {
-    .project_link {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 711px) {
-    .project_link {
-        grid-template-columns: repeat(1, 1fr);
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .project_link div {
     border-radius: 8px;
     background-color: white;
-    width: 300px;
-    height: 230px;
-    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 270px;
+    width: 100%;
+    text-align: center;
+    /* padding: 30px 20px 0px 20px; */
     transition: 0.3s ease;
 }
 
@@ -292,20 +293,114 @@ nav {
 }
 
 .project_img {
-    height: 120px;
-    width: auto;
+    /* height: auto; */
+    height: 170px;
+    width: 75%;
+    margin: 10px auto;
 }
 
-#pro1_img{
-    padding: 12px;
+@media (min-width: 1920px) {
+    .project_name {
+        font-size: 56px;
+    }
+
+    .project_link {
+        gap: 50px;
+        max-width: 1600px;
+    }
+
+    .project_link div {
+        width: 500px;
+        height: 350px;
+        font-size: 18px;
+    }
+
+    .project_img {
+        height: 200px;
+    }
 }
 
-#pro2_img{
-    padding: 10px 0 10px 30px;
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .project_name {
+        font-size: 48px;
+    }
+
+    .project_link {
+        gap: 100px;
+    }
+
+    .project_link div {
+        width: 350px;
+        height: 300px;
+        font-size: 16px;
+    }
+
+    .project_img {
+        height: 170px;
+    }
 }
 
-#pro3_img {
-    padding : 10px 0 10px 60px;
+@media (min-width: 992px) and (max-width: 1199px) {
+    .project_name {
+        font-size: 30px;
+    }
+
+    .project_link div {
+        width: 340px;
+        height: 300px;
+        font-size: 15px;
+    }
+
+    .project_img {
+        height: 170px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .project_name {
+        font-size: 36px;
+    }
+
+    .project_link div {
+        width: 40%;
+        font-size: 15px;
+    }
+
+    .project_img {
+        height: 150px;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+    .project_name {
+        font-size: 30px;
+    }
+
+    .project_link div {
+        width: 70%;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .project_img {
+        height: 140px;
+    }
+}
+
+@media (max-width: 539px) {
+    .project_name {
+        font-size: 26px;
+    }
+
+    .project_link div {
+        width: 80%;
+        height: auto;
+        font-size: 13px;
+    }
+
+    .project_img {
+        height: 130px;
+    }
 }
 
 
@@ -348,6 +443,16 @@ nav {
 .education_part p {
     line-height: 1.6;
     color: #555;
+}
+
+#institute_link {
+    color: #555;
+    text-decoration: none;
+    border-bottom: 2px solid #ffffff;
+}
+
+#institute_link:hover{
+    border-bottom: 2px solid orangered;
 }
 
 .education_part b {
