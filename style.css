@@ -186,10 +186,11 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 40px 0 100px 0;
+    padding-left: 30px;
     gap: 30px;
 }
 
-.about_container div{
+.about_container div {
     justify-content: center;
     align-items: center;
 }
@@ -219,6 +220,29 @@ span {
     border: 1px solid black;
 }
 
+
+@media (min-width: 1200px) and (max-width: 1940px) {
+    .about_container {
+        justify-content: space-around;
+    }
+
+    .hi {
+        font-size: 20px;
+    }
+
+    .about_container div h1 {
+        font-size: 40px;
+    }
+
+    .about_container div p {
+        font-size: 25px;
+    }
+
+    .img {
+        width: 330px;
+    }
+}
+
 @media (max-width: 879px) {
     .about_container {
         gap: 50px;
@@ -230,7 +254,7 @@ span {
 @media (max-width: 776px) {
     .about_container {
         flex-direction: column;
-        gap: 50px;
+        gap: 60px;
     }
 }
 
@@ -451,7 +475,7 @@ span {
     border-bottom: 2px solid #ffffff;
 }
 
-#institute_link:hover{
+#institute_link:hover {
     border-bottom: 2px solid orangered;
 }
 
