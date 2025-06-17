@@ -103,6 +103,23 @@ nav {
     color: white;
 }
 
+@media (min-width: 1024px) and (max-width: 1920px) {
+    .header_container {
+        height: 90px;
+    }
+    .name {
+        font-size: 30px;
+    }
+    nav {
+        font-size: 28px;
+        gap: 90px;
+    }
+    .Contact {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+}
+
 #bars {
     color: white;
     display: none;
