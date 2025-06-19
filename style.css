@@ -44,6 +44,7 @@ html {
     .scroll-btn {
         padding: 27px;
     }
+
     .fa-arrow-up {
         font-size: 20px;
     }
@@ -116,13 +117,16 @@ nav {
     .header_container {
         height: 90px;
     }
+
     .name {
         font-size: 30px;
     }
+
     nav {
         font-size: 28px;
         gap: 90px;
     }
+
     .Contact {
         padding: 15px 30px;
         font-size: 20px;
@@ -310,6 +314,7 @@ span {
 
 .project_name {
     text-align: center;
+    font-size: 27;
 }
 
 .project_link {
@@ -351,7 +356,7 @@ span {
 
 @media (min-width: 1920px) {
     .project_name {
-        font-size: 56px;
+        font-size: 43px;
     }
 
     .project_link {
@@ -372,17 +377,21 @@ span {
 
 @media (min-width: 1200px) and (max-width: 1919px) {
     .project_name {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     .project_link {
-        gap: 100px;
+        gap: 70px;
+    }
+
+    .project_name {
+        font-size: 30px;
     }
 
     .project_link div {
-        width: 350px;
+        width: 400px;
         height: 300px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .project_img {
@@ -397,7 +406,7 @@ span {
 
     .project_link div {
         width: 340px;
-        height: 300px;
+        height: 250px;
         font-size: 15px;
     }
 
@@ -408,7 +417,7 @@ span {
 
 @media (min-width: 768px) and (max-width: 991px) {
     .project_name {
-        font-size: 36px;
+        font-size: 34px;
     }
 
     .project_link div {
@@ -466,8 +475,8 @@ span {
 .edu {
     color: orangered;
     text-align: center;
-    /* transition: 0.3s ease; */
     margin-bottom: 30px;
+    font-size: 27px;
 }
 
 #education {
@@ -505,9 +514,77 @@ span {
     border-bottom: 2px solid orangered;
 }
 
+.fa-globe:hover {
+    color: orangered;
+}
+
 .education_part b {
     color: #000;
 }
+
+
+@media (min-width: 1920px) {
+    .edu {
+        font-size: 43px;
+    }
+
+    .education_part h2 {
+        font-size: 35px;
+    }
+
+    .education_part p {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .edu {
+        font-size: 40px;
+    }
+
+    .education_part h2 {
+        font-size: 33px;
+    }
+
+    .education_part p {
+        font-size: 23px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .edu {
+        font-size: 30px;
+    }
+
+    .education_part h2 {
+        font-size: 23px;
+    }
+
+    .education_part p {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .edu {
+        font-size: 34px;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+    .edu {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 539px) {
+    .edu {
+        font-size: 26px;
+    }
+}
+
+
+/*FOOTER*/
 
 #footer_style {
     background-color: rgb(46, 45, 45);
@@ -538,7 +615,8 @@ span {
         height: 90px;
         gap: 60px;
     }
+
     #footer_style i {
         font-size: 30px;
-    }   
+    }
 }
