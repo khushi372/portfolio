@@ -339,7 +339,6 @@ span {
     height: 270px;
     width: 100%;
     text-align: center;
-    /* padding: 30px 20px 0px 20px; */
     transition: 0.3s ease;
 }
 
@@ -348,7 +347,6 @@ span {
 }
 
 .project_img {
-    /* height: auto; */
     height: 170px;
     width: 75%;
     margin: 10px auto;
@@ -584,6 +582,14 @@ span {
 }
 
 
+
+/*SKILLS*/
+
+.skill_container{
+    color: var(--text-hover-color);
+    text-align: center;
+}
+
 /*FOOTER*/
 
 #footer_style {
@@ -619,4 +625,49 @@ span {
     #footer_style i {
         font-size: 30px;
     }
+}
+
+#contact_background {
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    z-index: -1;
+}
+
+.contact h1 {
+    color: var(--text-hover-color);
+    text-align: center;
+    position: relative;
+    padding-top: 50px;
+}
+
+.contact_detail h2 {
+    color: var(--text-hover-color);
+    text-align: center;
+    padding-top: 90px;
+}
+
+.contact_detail p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.fa-envelope {
+    text-align: center;
+}
+
+.contact_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.fonts:hover {
+    color: var(--text-hover-color);
+}
+
+#phone_logo {
+    margin-bottom: 40px;
 }
