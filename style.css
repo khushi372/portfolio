@@ -510,11 +510,12 @@ span {
 
 #institute_link:hover {
     border-bottom: 2px solid orangered;
-}
-
-.fa-globe:hover {
     color: orangered;
 }
+
+/* .fa-globe:hover {
+    color: orangered;
+} */
 
 .education_part b {
     color: #000;
